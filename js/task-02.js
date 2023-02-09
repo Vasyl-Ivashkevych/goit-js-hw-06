@@ -14,6 +14,7 @@ const elements = [];
 for (const ingredient of ingredients) {
   const value = ingredient;
   const ingredItem = document.createElement('li');
+  ingredItem.classList.add('item');
   ingredItem.textContent = value;
   elements.push(ingredItem);
 
