@@ -19,9 +19,11 @@ const elements = images.map((image) => {
   const galleryItem = document.createElement("li");
   galleryItem.classList.add("gallery_item");
   const galleryImage = document.createElement("img");
-  galleryImage.classList.add('gallery_item-icon');
+  galleryImage.classList.add("gallery_item-icon");
   galleryImage.src = image.url;
   galleryImage.alt = image.alt;
   galleryItem.append(galleryImage);
   galleryList.append(galleryItem);
 });
+
+
