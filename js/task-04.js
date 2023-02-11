@@ -23,7 +23,3 @@ buttonIncrement.addEventListener('click', function () {
 });
 
 
-const galleryItem = images
-  .map((image) => `<li class="gallery_item"></li>`)
-  .join("");
-galleryList.insertAdjacentHTML("beforeend", galleryItem);
