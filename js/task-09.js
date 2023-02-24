@@ -2,8 +2,6 @@ const buttonEl = document.querySelector('.change-color');
 const colorEl = document.querySelector('.color');
 const body = document.body;
 
-
-
 buttonEl.addEventListener('click',onBtnColorChange);
 
 function onBtnColorChange() {
@@ -12,5 +10,5 @@ function onBtnColorChange() {
 };
 
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
 }
