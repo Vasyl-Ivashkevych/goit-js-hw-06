@@ -11,7 +11,11 @@ function handleSubmit(event) {
     return alert(`Заповніть всі поля!`);
   }
 
-  const formData = new FormData(event.currentTarget);
+  const formData = {
+    email: email.value,
+    password: password.value,
+  };
+  
   console.log(formData);
   event.currentTarget.reset();
 }
